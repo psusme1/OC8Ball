@@ -1,0 +1,140 @@
+﻿<%@ master language="C#" autoeventwireup="true" CodeFile="~/Site.master.cs" inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>
+        Billiards and Pool Scene - Ocean City, Maryland
+    </title>
+
+    <meta name="google-site-verification" content="hz_QI1PiKcgpL-OqNe6fIvlmMLwCb-gBzr_wExWKKkw" />
+    <meta name="title" content="Billiards and Pool Scene - Ocean City, Maryland" />
+    <meta name="description" content="Local pool league schedules, standings, player photos from around the pool league, important league dates, special league news, and local pool tournaments." />
+    <meta name="keywords" content="pool, billiards, 8-ball, 9-ball, APA, pool tournament" />
+    <meta name="revisit-after" content="10" />
+    <meta name="reply-to" content="shawn@oc8ball.com" />
+    <meta name="Rating" content="General" />
+    <meta name="PICS-label" content="G" />
+    <meta name="Language" content="en" />
+    <meta name="Classification" content="Sports" />
+    <meta name="Author" content="Shawn Englerth" />
+
+    <link rel="stylesheet" type="text/css" href="Styles/Site2.css" />
+    <link rel="Stylesheet" type="text/css" href="App_Themes/oc8ball/oc8ball.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="image_src" href="http://www.oc8ball.com/Images/logo2preview.gif" />
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" >
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-27310597-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</head>
+
+<body>
+    
+    <form runat="server">
+        
+        <div align="center">
+            <table width="955px">
+               
+                <tr>
+                    <td style="text-align: center;">
+                        
+                        <asp:Image ImageUrl="~/Images/logo2.gif" Height="151px" Width="736px" ID="imgLogo" runat="server" />
+                        <br />
+                        <div align="center">
+                        <table width="620px">
+                            <tr>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Home" NavigateUrl="~/Default.aspx" ID="hyplHome" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Fall 2015" NavigateUrl="~/Fall2015.aspx" ID="hyplFA15" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Spring 2015" NavigateUrl="~/Spring2015.aspx" ID="hyplSP15" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Fall 2014" NavigateUrl="~/Fall2014.aspx" ID="hyplFA14" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Spring 2014" NavigateUrl="~/Spring2014.aspx" ID="hyplSP14" runat="server" />
+                                </td>
+                               <td class="Center">
+                                    <asp:HyperLink Text="Player Stats" NavigateUrl="~/Statistics/AllPlayerStats.aspx?id=0" ID="hyplStats" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Photos" NavigateUrl="~/Gallery/Photos.aspx" ID="hyplPhotos" runat="server" />
+                                </td>
+                                <td class="Center">
+                                    <asp:HyperLink Text="Links" NavigateUrl="~/Links.aspx" ID="hyplLinks" runat="server" />
+                                </td>
+                            </tr>
+                        </table>
+                        </div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                      
+                        <hr />
+                           <div id="fb-root"></div>
+                            <script type="text/javascript" language="javascript">
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                                (document, 'script', 'facebook-jssdk'));
+                            </script>
+                        <div align="center" 
+                            class="fb-like" 
+                            data-href="http://www.facebook.com/media/set/?set=a.150926951604365.25175.100000611829604&amp;type=3#!/pages/Ocean-City-Pool-Players-wwwoc8ballcom/198283383540325" 
+                            data-send="false" 
+                            data-width="0" 
+                            data-show-faces="false" 
+                            data-colorscheme="light" 
+                            data-font="arial">
+                          </div>
+                          <br />
+                        <div style="font-size: 9pt;">
+                            <b>Site designed & maintained by Shawn Englerth</b>
+                            <br />
+                            Carlsbad, CA&nbsp;&nbsp;&nbsp;443.859.1203
+                            <br />
+                            <a href="mailto:shawn@oc8ball.com?subject=oc8ball">Email oc8ball</a>
+                            <br />
+                            &copy; <% Response.Write(DateTime.Now.Year.ToString()); %> oc8ball
+                            <br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </form>
+</body>
+</html>
