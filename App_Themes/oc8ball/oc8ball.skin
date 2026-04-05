@@ -1,0 +1,11 @@
+﻿<asp:DataGrid runat="server" SkinID="DataGrid" AutoGenerateColumns="false" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" GridLines="none" >
+    <HeaderStyle BackColor="#3366aa" ForeColor="white" Font-Bold="true" CssClass="GridView" />
+    <ItemStyle BackColor="#aaaaaa" BorderStyle="None" ForeColor="white" Font-Bold="true" />
+    <AlternatingItemStyle BackColor="White" BorderStyle="None" ForeColor="#0055ff" Font-Bold="true" />
+</asp:DataGrid>
+
+<asp:DataGrid runat="server" SkinID="DataGrid2" AutoGenerateColumns="false" BorderColor="Black" BorderStyle="Solid" BorderWidth="2" GridLines="none" >
+    <HeaderStyle BackColor="#3366aa" ForeColor="white" CssClass="GridView" />
+    <ItemStyle BackColor="#aaaaaa" BorderStyle="None" ForeColor="white" />
+    <AlternatingItemStyle BackColor="White" BorderStyle="None" ForeColor="#0055ff" />
+</asp:DataGrid>
